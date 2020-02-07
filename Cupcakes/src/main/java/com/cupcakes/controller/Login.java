@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.cupcakes.service.LoginService;
@@ -14,12 +15,13 @@ import com.cupcakes.service.LoginServiceImpl;
 public class Login {
 	
 	@RequestMapping("/login")
-	public ModelAndView userLogin(HttpServletRequest req,HttpServletResponse res) {
+	public ModelAndView userLogin(@RequestParam("uname") String uname,@RequestParam("pass") String pass, HttpServletRequest req,HttpServletResponse res) {
 		
 		ModelAndView mv=new ModelAndView();
-		
-		String uname=req.getParameter("uname");
-		String pass=req.getParameter("pass");
+		//Uncomment below lines if you don't use RequestParam annotation
+		/* 
+		 * String uname=req.getParameter("uname"); String pass=req.getParameter("pass");
+		 */
 		LoginService ls=new LoginServiceImpl();
 		
 		if (ls.loginServiceMethod(uname, pass)) {
