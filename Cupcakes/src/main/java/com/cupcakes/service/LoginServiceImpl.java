@@ -1,12 +1,12 @@
 package com.cupcakes.service;
 
-import com.cupcakes.dao.Logindao;
-import com.cupcakes.dao.LogindaoImpl;
+import com.cupcakes.dao.LoginDao;
+import com.cupcakes.dao.LoginDaoImpl;
 
 public  class LoginServiceImpl implements LoginService{
 
 	public boolean loginServiceMethod(String uname,String pass) {
-		Logindao ld=new LogindaoImpl();
+		LoginDao ld=new LoginDaoImpl();
 		if(ld.checkUser(uname, pass)) {
 			return true;
 		}

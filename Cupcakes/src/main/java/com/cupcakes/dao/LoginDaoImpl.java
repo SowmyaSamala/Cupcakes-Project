@@ -6,7 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 
-public class LogindaoImpl implements Logindao {
+public class LoginDaoImpl implements LoginDao {
 
 
 	public boolean checkUser(String uname, String pass) {
