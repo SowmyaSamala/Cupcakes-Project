@@ -6,8 +6,8 @@
 <meta charset="ISO-8859-1">
 <title>Login Success Page</title>
 </head>
-<body>
-	Your Login is Successful!<br><br>
-	Welcome!!!<br>
+<body align="center">
+	<b>Your Login is Successful!<br><br>
+	Welcome to Cupcakes!!!</b><br>
 </body>
 </html>
