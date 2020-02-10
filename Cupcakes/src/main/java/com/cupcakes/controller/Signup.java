@@ -12,10 +12,10 @@ import com.cupcakes.service.LoginService;
 import com.cupcakes.service.LoginServiceImpl;
 
 @Controller
-public class Login {
+public class Signup {
 	
-	@RequestMapping("/login")
-	public ModelAndView userLogin(@RequestParam("uname") String uname,@RequestParam("pass") String pass, HttpServletRequest req,HttpServletResponse res) {
+	@RequestMapping("/signup")
+	public ModelAndView userLogin(@RequestParam("fname") String fname,@RequestParam("gender") String gender,@RequestParam("uname") String uname,@RequestParam("pass") String pass, HttpServletRequest req,HttpServletResponse res) {
 		
 		ModelAndView mv=new ModelAndView();
 		//Uncomment below lines if you don't use RequestParam annotation
@@ -24,22 +24,13 @@ public class Login {
 		 */
 		LoginService ls=new LoginServiceImpl();
 		
-		if (ls.loginServiceMethod(uname, pass)) {
-			mv.setViewName("loginSuccess.jsp");
+		if (ls.signupServiceMethod(fname, gender, uname, pass)) {
+			mv.setViewName("signupSuccess.jsp");
 		}
 		else {
 			mv.setViewName("Failure.jsp");
 		}
 		
 		return mv ;
-		
 	}
-	
-	@RequestMapping("/signupLink")
-	public ModelAndView linkSignup() {
-		ModelAndView mv=new ModelAndView();
-		mv.setViewName("signup.jsp");
-		return mv;
-	}
-
 }

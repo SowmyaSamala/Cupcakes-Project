@@ -4,10 +4,12 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Login Success Page</title>
+<title>Signup Success Page</title>
 </head>
+<body>
 <body align="center"><br><br>
-	<b>Your Login is Successful!<br><br>
-	Welcome to Cupcakes!!!</b><br>
+	<b>Your Signup is Successful!<br><br>
+	Click here to <a href="index.jsp">Login</a></b><br>
+
 </body>
 </html>
