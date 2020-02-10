@@ -11,7 +11,6 @@
 
 <form action="signup" align="center">
 
-
 	Enter Your Fullname     <input type="text" name="fname" required><br><br>
 	Enter Your Gender       <input type="text" name="gender" required><br><br>
 	Enter Your Username     <input type="text" name="uname" required><br><br>
