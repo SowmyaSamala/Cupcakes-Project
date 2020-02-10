@@ -1,9 +1,5 @@
 package com.cupcakes.dao;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.util.List;
 
 import org.hibernate.Session;
@@ -17,11 +13,7 @@ import com.cupcakes.vo.User;
 
 
 
-public class LoginDaoImpl implements LoginDao {
-
-
-	
-		
+public class LoginDaoImpl implements LoginDao {		
 		
 		//Uncomment the below lines to use JDBC instead of Hibernate
 		/*

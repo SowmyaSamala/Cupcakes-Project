@@ -6,8 +6,8 @@
 
 
 <form action="login" align="center">
-	Enter Username     <input type="text" name="uname"><br><br>
-	Enter Password     <input type="password" name="pass"><br><br>
+	Enter Username     <input type="text" name="uname" required><br><br>
+	Enter Password     <input type="password" name="pass" required><br><br>
 	                   <button type="submit">Login</button>
 	               
 	                   
