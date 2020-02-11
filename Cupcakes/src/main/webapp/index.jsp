@@ -2,6 +2,7 @@
 
 <title>Cupcakes-Login or Signup</title>
 
+
 <h2 align="center"><br><br>Submit your details to Login<br> Or <br> Click on Sign Up if you are a new user<br><br></h2>
 
 
@@ -9,6 +10,7 @@
 	Enter Username     <input type="text" name="uname" required><br><br>
 	Enter Password     <input type="password" name="pass" required><br><br>
 	                   <button type="submit">Login</button>
+	                  
 	               
 	                   
 </form>
