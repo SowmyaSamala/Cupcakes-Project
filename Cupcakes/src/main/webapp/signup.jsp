@@ -12,7 +12,7 @@
 <form action="signup" align="center">
 
 	Enter Your Fullname     <input type="text" name="fname" required><br><br>
-	Enter Your Gender       <input type="text" name="gender" required><br><br>
+	Enter Your Gender       <input type="radio" name="gender" value="male" required> Male <input type="radio" name="gender" value="female" required>Female <input type="radio" name="gender" value="other" required> Other <br><br>
 	Enter Your Username     <input type="text" name="uname" required><br><br>
 	Enter Your Password     <input type="password" name="pass" required><br><br>
 	

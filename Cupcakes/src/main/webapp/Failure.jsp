@@ -11,7 +11,7 @@
 Don't worry! Try again! <br><br>
 Click here to <a href="index.jsp">Login</a><br><br>
 
-Click here to <a href="signup.jsp">Login</a><br><br>
+Click here to <a href="signup.jsp">Sign Up</a><br><br>
 
 </body>
 </html>
