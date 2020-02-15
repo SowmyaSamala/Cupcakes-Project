@@ -19,6 +19,13 @@ public class User {
 		return "User [fname=" + fname + ", gender=" + gender + ", uname=" + uname + ", pass=" + pass + "]";
 	}
 	
+	public User(String fname,String gender,String uname,String pass) {
+		this.fname=fname;
+		this.gender=gender;
+		this.uname=uname;
+		this.pass=pass;
+	}
+	
 	
 	public String getFname() {
 		return fname;

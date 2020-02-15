@@ -19,22 +19,22 @@ public class Login {
 	@RequestMapping("/login")
 	public ModelAndView userLogin(@RequestParam("uname") String uname,@RequestParam("pass") String pass, HttpServletRequest req,HttpServletResponse res) {
 		
-		ModelAndView mv=new ModelAndView();
+		
 		//Uncomment below lines if you don't use RequestParam annotation
 		/* 
 		 * String uname=req.getParameter("uname"); String pass=req.getParameter("pass");
 		 */
-		
-		
+				
 		LoginService ls=new LoginServiceImpl();
 		
+		
+		ModelAndView mv=new ModelAndView();
 		if (ls.loginServiceMethod(uname, pass)) {
 			mv.setViewName("loginSuccess.jsp");
 		}
 		else {
 			mv.setViewName("Failure.jsp");
-		}
-		
+		}	
 		return mv ;
 		
 	}

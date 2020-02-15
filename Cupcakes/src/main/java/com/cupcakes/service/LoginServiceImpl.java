@@ -1,7 +1,8 @@
-package com.cupcakes.service;
+ package com.cupcakes.service;
 
 import com.cupcakes.dao.LoginDao;
 import com.cupcakes.dao.LoginDaoImpl;
+
 
 public  class LoginServiceImpl implements LoginService{
 

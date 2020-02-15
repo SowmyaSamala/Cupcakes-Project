@@ -48,11 +48,7 @@ public class LoginDaoImpl implements LoginDao {
 	
 	public boolean saveUser(String fname,String gender,String uname,String pass) {
 		
-		User user=new User();
-		user.setFname(fname);
-		user.setGender(gender);
-		user.setPass(pass);
-		user.setUname(uname);
+		User user=new User(fname,gender,uname,pass);
 		Transaction tx=session.beginTransaction();
 		session.save(user);
 		tx.commit();

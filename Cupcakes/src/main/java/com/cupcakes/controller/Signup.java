@@ -24,8 +24,7 @@ public class Signup {
 		/* 
 		 * String uname=req.getParameter("uname"); String pass=req.getParameter("pass");
 		 */
-		LoginService ls=new LoginServiceImpl();
-		
+		LoginService ls=new LoginServiceImpl();		
 		if(ls.loginServiceMethod(uname, pass)) {
 			mv.setViewName("alreadyRegistered.jsp");			
 		}else if (ls.signupServiceMethod(fname, gender, uname, pass)) {
